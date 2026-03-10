@@ -14,15 +14,24 @@ importers:
       '@colyseus/tools':
         specifier: ^0.17.0
         version: 0.17.15(@colyseus/core@0.17.20)(@colyseus/ws-transport@0.17.7(@colyseus/core@0.17.20)(express@4.22.1))
-      '@colyseus/uwebsockets-transport':
-        specifier: ^0.17.0
-        version: 0.17.10(@colyseus/core@0.17.20)
+      '@dimforge/rapier2d-compat':
+        specifier: ^0.19.3
+        version: 0.19.3
       colyseus:
         specifier: ^0.17.6
         version: 0.17.7(@colyseus/auth@0.17.5(@colyseus/core@0.17.20)(express@4.22.1))(@colyseus/better-call@1.2.0(zod@4.3.6))(@colyseus/core@0.17.20)(@colyseus/redis-driver@0.17.5(@colyseus/better-call@1.2.0(zod@4.3.6))(@colyseus/schema@4.0.5(typescript@5.9.3))(@colyseus/ws-transport@0.17.7(@colyseus/core@0.17.20)(express@4.22.1))(@pm2/io@6.1.0)(express@4.22.1)(zod@4.3.6))(@colyseus/redis-presence@0.17.5(@colyseus/better-call@1.2.0(zod@4.3.6))(@colyseus/schema@4.0.5(typescript@5.9.3))(@colyseus/ws-transport@0.17.7(@colyseus/core@0.17.20)(express@4.22.1))(@pm2/io@6.1.0)(express@4.22.1)(zod@4.3.6))(@colyseus/schema@4.0.5(typescript@5.9.3))(@colyseus/uwebsockets-transport@0.17.10(@colyseus/core@0.17.20))(@colyseus/ws-transport@0.17.7(@colyseus/core@0.17.20)(express@4.22.1))(@pm2/io@6.1.0)(express@4.22.1)(zod@4.3.6)
       express:
         specifier: ^4.18.2
         version: 4.22.1
+      gl-matrix:
+        specifier: ^3.4.4
+        version: 3.4.4
+      uniqid:
+        specifier: ^5.4.0
+        version: 5.4.0
+      zod:
+        specifier: ^4.3.6
+        version: 4.3.6
     devDependencies:
       '@colyseus/loadtest':
         specifier: ^0.17.7
@@ -39,6 +48,9 @@ importers:
       '@types/mocha':
         specifier: ^10.0.1
         version: 10.0.10
+      '@types/uniqid':
+        specifier: ^5.3.4
+        version: 5.3.4
       mocha:
         specifier: ^11.7.5
         version: 11.7.5
@@ -170,6 +182,9 @@ packages:
     peerDependenciesMeta:
       express:
         optional: true
+
+  '@dimforge/rapier2d-compat@0.19.3':
+    resolution: {integrity: sha512-5HZUgiSpu9Uba3He+4SCPVte3h2vgxcodkxWThRjd3X/zgq/Z4OyRUKpNEOsOR6AC+OfulPkkZ5asZGzRMpcwA==}
 
   '@esbuild/aix-ppc64@0.27.2':
     resolution: {integrity: sha512-GZMB+a0mOMZs4MpDbj8RJp4cw+w1WV5NYD6xzgvzUJ5Ek2jerwfO2eADyI6ExDSUED+1X8aMbegahsJi+8mgpw==}
@@ -419,6 +434,9 @@ packages:
 
   '@types/serve-static@1.15.10':
     resolution: {integrity: sha512-tRs1dB+g8Itk72rlSI2ZrW6vZg0YrLI81iQSTkMmOqnqCaNr/8Ek4VwWcN5vZgCYWbg/JJSGBlUaYGAOP73qBw==}
+
+  '@types/uniqid@5.3.4':
+    resolution: {integrity: sha512-AgC+o3/8/QEHuU3w5w2jZ8auQtjSJ/s8G8RfEk9CYLogK1RGXqxhHH0wOEAu8uHXjvj8oh/dRtfgok4IHKxh/Q==}
 
   '@types/ws@8.18.1':
     resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
@@ -738,6 +756,9 @@ packages:
 
   get-tsconfig@4.13.0:
     resolution: {integrity: sha512-1VKTZJCwBrvbd+Wn3AOgQP/2Av+TfTCOlE4AcRJE72W1ksZXbAx8PPBR9RzgTeSPzlPMHrbANMH3LbltH73wxQ==}
+
+  gl-matrix@3.4.4:
+    resolution: {integrity: sha512-latSnyDNt/8zYUB6VIJ6PCh2jBjJX6gnDsoCZ7LyW7GkqrD51EWwa9qCoGixj8YqBtETQK/xY7OmpTF8xz1DdQ==}
 
   glob@10.5.0:
     resolution: {integrity: sha512-DfXN8DfhJ7NH3Oe7cFmu3NCu1wKbkReJ8TorzSAFbSKrlNaQSKfIzqYqVY8zlbs2NLBbWpRiU52GX2PbaBVNkg==}
@@ -1222,6 +1243,9 @@ packages:
   undici-types@7.16.0:
     resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
 
+  uniqid@5.4.0:
+    resolution: {integrity: sha512-38JRbJ4Fj94VmnC7G/J/5n5SC7Ab46OM5iNtSstB/ko3l1b5g7ALt4qzHFgGciFkyiRNtDXtLNb+VsxtMSE77A==}
+
   unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
@@ -1466,6 +1490,8 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
+  '@dimforge/rapier2d-compat@0.19.3': {}
+
   '@esbuild/aix-ppc64@0.27.2':
     optional: true
 
@@ -1649,6 +1675,8 @@ snapshots:
       '@types/http-errors': 2.0.5
       '@types/node': 25.0.10
       '@types/send': 0.17.6
+
+  '@types/uniqid@5.3.4': {}
 
   '@types/ws@8.18.1':
     dependencies:
@@ -2019,6 +2047,8 @@ snapshots:
   get-tsconfig@4.13.0:
     dependencies:
       resolve-pkg-maps: 1.0.0
+
+  gl-matrix@3.4.4: {}
 
   glob@10.5.0:
     dependencies:
@@ -2519,6 +2549,8 @@ snapshots:
       random-bytes: 1.0.0
 
   undici-types@7.16.0: {}
+
+  uniqid@5.4.0: {}
 
   unpipe@1.0.0: {}
 
